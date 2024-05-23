@@ -1,7 +1,8 @@
+![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
 <a name="___top"></a>
 <div align="center">
 <link rel="icon" href="http://github.com/doctopus/ChatGPT-Mods" />
-![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
+
 
 ![logo](icon.png "Human Genome Project Animation")
 </div>
