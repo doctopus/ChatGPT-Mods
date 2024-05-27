@@ -1,4 +1,4 @@
-function applyFont(font) {
+function applyFontSettings(font, fontSize) {
     let styleElement = document.getElementById('dynamic-font-style');
     if (!styleElement) {
         styleElement = document.createElement('style');
@@ -8,17 +8,19 @@ function applyFont(font) {
     styleElement.innerHTML = `
     div.w-full, #prompt-textarea {
       font-family: ${font} !important;
+      font-size: ${fontSize}px !important;
     }
   `;
     console.log('Applied font:', font);
+    console.log('Applied font size:', fontSize);
 }
 
-// Function to observe changes and reapply the font
-function observeFontChanges(font) {
+// Function to observe changes and reapply the font settings
+function observeFontChanges(font, fontSize) {
     const observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
             if (mutation.addedNodes.length) {
-                applyFont(font);
+                applyFontSettings(font, fontSize);
             }
         });
     });
@@ -29,14 +31,15 @@ function observeFontChanges(font) {
     });
 }
 
-// Get the saved font from storage and apply it
-browser.storage.sync.get('font').then((result) => {
-    if (result.font) {
+// Get the saved font settings from storage and apply them
+browser.storage.sync.get(['font', 'fontSize']).then((result) => {
+    if (result.font && result.fontSize) {
         console.log('Retrieved font:', result.font);
-        applyFont(result.font);
-        observeFontChanges(result.font); // Start observing changes
+        console.log('Retrieved font size:', result.fontSize);
+        applyFontSettings(result.font, result.fontSize);
+        observeFontChanges(result.font, result.fontSize); // Start observing changes
     } else {
-        console.log('No font found in storage.');
+        console.log('No font settings found in storage.');
     }
 });
 
