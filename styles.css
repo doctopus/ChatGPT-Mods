@@ -1,8 +1,8 @@
 /*ChatGPT Logo*/
 .h-12 {
-    display: none
+    display: none;
 }
-/* svg:nth-child(1){display: none} */
+
 /*ChatGPT at top*/
 div.juice\:text-token-text-secondary:nth-child(1) {
     display: none;
@@ -11,35 +11,28 @@ div.juice\:text-token-text-secondary:nth-child(1) {
 /* Text area font*/
 div.w-full {
     font-size: 11px;
-    font-family: Berkeley Mono;
+    font-family: Berkeley Mono; /* This will be overridden */
     line-height: 1.15;
 }
+
 .prose :where(p):not(:where([class~="not-prose"] *)) {
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
-
-
-
-/*Code block Dark Purple
-.bg-gray-950 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(0, 50, 100, var(--tw-bg-opacity));
-}*/
-/*Prompt area*/
+/* Prompt area */
 #prompt-textarea {
-    font-size: 10px
+    font-size: 10px;
 }
+
 #prompt-textarea::placeholder {
     opacity: 0;
 }
-/*Bottom mini text*/
+
+/* Bottom mini text */
 .px-2 > span:nth-child(1) {
     opacity: 0;
 }
-
-
 
 /* Override dark mode styles for code blocks */
 div.dark.bg-gray-950 {
