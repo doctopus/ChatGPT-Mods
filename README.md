@@ -34,13 +34,25 @@ Solution:
 The add-on files include the following files.
 
 ```
-ChatGPT-Mods/
+chatgpt-mods/
 ├── manifest.json
 ├── content.js
 ├── styles.css
+├── popup.html
+├── popup.js
+├── options.html
+├── options.js
 ├── icon.png
 ├── icon-large.png   // Optional larger icon
 ```
+
+### Addon Description in Firefox
+This add-on customizes how the ChatGPT page appears. (Works on new https://chatgpt.com page)    
+    -Changes the font and spacing so it takes less space.    
+    -CodeBlock is presented as light theme instead the default dark theme    
+    -ChatGPT mentions in the top and in the typing field are removed    
+    -In a small width window, enter submits the code; no need to use mouse to submit chat    
+
 
 ### Usage
 The add-on can be found in Mozilla Firefox Add-On Page: [ChatGPT-Mods](https://addons.mozilla.org/en-US/firefox/addon/chatgpt-mods/)
