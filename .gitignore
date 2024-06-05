@@ -1,4 +1,4 @@
 .idea
 node_modules
-chatgpt-mods.zip
+*.zip
 .DS_Store

@@ -45,6 +45,8 @@ chatgpt-mods/
 ├── icon.png
 ├── icon-large.png   // Optional larger icon
 ```
+Change the version number in manifest.json before zipping for next version.
+
 
 ### Addon Description in Firefox
 This add-on customizes how the ChatGPT page appears. (Works on new https://chatgpt.com page)    

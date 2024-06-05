@@ -2,33 +2,27 @@
 .h-12 {
     display: none;
 }
-
 /*ChatGPT at top*/
 div.juice\:text-token-text-secondary:nth-child(1) {
     display: none;
 }
-
 /* Text area font*/
 div.w-full {
     font-size: 11px;
     font-family: Berkeley Mono; /* This will be overridden */
     line-height: 1.15;
 }
-
 .prose :where(p):not(:where([class~="not-prose"] *)) {
     margin-bottom: 0px;
     margin-top: 0px;
 }
-
 /* Prompt area */
 #prompt-textarea {
     font-size: 10px;
 }
-
 #prompt-textarea::placeholder {
     opacity: 0;
 }
-
 /* Bottom mini text */
 .px-2 > span:nth-child(1) {
     opacity: 0;
@@ -39,20 +33,19 @@ div.dark.bg-gray-950 {
     background-color: #ffffff !important; /* White background */
     border-color: #cccccc !important; /* Light grey border */
 }
-
 div.text-token-text-secondary {
     color: #333333 !important; /* Dark text color */
 }
-
 div.bg-token-main-surface-secondary {
     background-color: #f5f5f5 !important; /* Light grey background for header */
 }
-
 div.overflow-y-auto.p-4.text-left.undefined code.hljs {
     background: #ffffff !important; /* White background for code block */
     color: #333333 !important; /* Dark text color for code */
 }
-
+code.hljs {
+    color: #303030 !important; /* Dark text color for code */
+}
 div.overflow-y-auto.p-4.text-left.undefined code.hljs .hljs-keyword,
 div.overflow-y-auto.p-4.text-left.undefined code.hljs .hljs-operator,
 div.overflow-y-auto.p-4.text-left.undefined code.hljs .hljs-number,
